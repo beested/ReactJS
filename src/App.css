@@ -1,0 +1,211 @@
+.App {
+  width: 90%;
+  margin: 2em auto;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: var(--deep-grey);
+}
+
+:root {
+  --white: #fff;
+  --whitesmoke: #f9f9f9;
+  --light-grey: #e2e8f0;
+  --grey: ##e2e8f0;
+  --medium-grey: #a7a7a7;
+  --deep-grey: #343434;
+  --green: #38a169;
+  --red: #cf3c3f;
+  --blue: #1b77f3;
+  --shadow-color: #ccc;
+}
+
+#new__register {
+  border-bottom: 2px solid var(--light-grey);
+  margin: 1.5em;
+  width: 95%;
+  color: var(--deep-grey);
+  margin-left: 2%;
+}
+.register {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  border: 2px solid var(--light-grey);
+  border-radius: 8px;
+  margin: 1.5em;
+  padding: 0.5em;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--deep-grey);
+}
+
+.input {
+  width: 90%;
+  height: 35px;
+  border: 1px solid var(--medium-grey);
+  grid-column: span 2;
+  background-color: var(--light-grey);
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  grid-column: 4;
+  grid-gap: 10px;
+  margin-right: 10%;
+  justify-content: space-around;
+}
+
+.button__cadastrar {
+  background-color: var(--green);
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 34px;
+  color: var(--whitesmoke);
+  cursor: pointer;
+}
+
+.button__delete {
+  background-color: var(--red);
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 34px;
+  color: var(--whitesmoke);
+  cursor: pointer;
+}
+
+.button__delete:hover {
+  color: #000;
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+.button__cadastrar:hover {
+  color: #000;
+  transform: scale(1.12);
+
+  transition: 0.5s;
+}
+
+.consulta {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #a0aec0;
+  border-radius: 6px;
+  margin-left: 1.5em;
+  justify-content: space-between;
+}
+
+#buttonVlrVenda {
+  margin-left: 4em;
+}
+
+.tableProduto button {
+  color: var(--deep-grey);
+  border: none;
+  background-color: transparent;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+}
+
+/* Cabeçalho */
+.consulta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tableProduto {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #f0f0f0;
+}
+.filter {
+  padding: 0.5rem;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.Produtos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid #a0aec0;
+}
+
+.prod {
+  width: 14%;
+  text-align: center;
+}
+.prod_imagem {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.delete {
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-right: 1em;
+  transition: 0.1s;
+}
+.delete:hover {
+  color: var(--red);
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+.prod_estoque_esgotado {
+  color: var(--red);
+}
+
+.edit {
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-right: 1em;
+  transition: 0.1s;
+}
+.edit:hover {
+  color: var(--blue);
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+.svg {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.loading {
+  display: flex;
+  color: var(--blue);
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+  font-size: 6rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
