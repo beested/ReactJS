@@ -203,7 +203,7 @@ function App() {
             Imagem
           </button>
           <button className="filter nomeprod" id="buttonDescricao">
-            Nome do produto
+            Nome do
           </button>
           <button className="filter" id="buttonReferencia">
             Referencia
